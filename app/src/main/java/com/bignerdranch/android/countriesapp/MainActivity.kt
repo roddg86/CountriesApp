@@ -10,5 +10,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        /* обработчик клика по кнопк */
+        binding.searchButton.setOnClickListener{
+            val countryName = binding.countryNameEditText.text.toString()
+
+            /* сделать запрос к api */
+            val countries = restCountriesApi.getCountryByName(countryName)
+            val country = countries[0]
+
+
+
+        }
     }
 }
