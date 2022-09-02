@@ -19,7 +19,12 @@ class MainActivity : AppCompatActivity() {
             val countries = restCountriesApi.getCountryByName(countryName)
             val country = countries[0]
 
-
+            /* размещение сконвертированных данных на view */
+            binding.countryNameTextView.text = country.name
+            binding.capitalTextView.text = country.capital
+            binding.populationTextView.text = country.population.toString()
+            binding.areaTextView.text = country.area.toString()
+            binding.languagesTextView.text = country.languages.toString()
 
         }
     }
