@@ -30,6 +30,8 @@ class MainActivity : AppCompatActivity() {
                 binding.populationTextView.text = formatNumber(country.population)
                 binding.areaTextView.text = formatNumber(country.area)
                 binding.languagesTextView.text = country.languages.joinToString { it.name }
+
+                loadSvg(binding.imageView, country.flag)
             }
         }
     }
