@@ -27,9 +27,9 @@ class MainActivity : AppCompatActivity() {
                 /* размещение сконвертированных данных на view */
                 binding.countryNameTextView.text = country.name
                 binding.capitalTextView.text = country.capital
-                binding.populationTextView.text = country.population.toString()
-                binding.areaTextView.text = country.area.toString()
-                binding.languagesTextView.text = country.languages.toString()
+                binding.populationTextView.text = formatNumber(country.population)
+                binding.areaTextView.text = formatNumber(country.area)
+                binding.languagesTextView.text = country.languages.joinToString { it.name }
             }
         }
     }
