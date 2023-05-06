@@ -1,10 +1,10 @@
-package com.bignerdranch.android.countriesapp
+package com.github.roddg86.countriesapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.lifecycleScope
-import com.bignerdranch.android.countriesapp.databinding.ActivityMainBinding
+import com.github.roddg86.countriesapp.databinding.ActivityMainBinding
 import kotlinx.coroutines.launch
 import java.lang.Exception
 
